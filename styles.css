@@ -1,51 +1,57 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    background-image: url(images/Rain-texture.jpg), opacity 25%;
     
-
 
 }
 .logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
+    width: 16%;
     height: auto;
+    
 }
 
+nav {
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    background-color: #0a3641;
+    width: 16%;
+    height:100%;
+    text-decoration-style: dashed;
+    bottom: 0;
+    border: 3px solid #d5a033;
+    top: 0;
+    box-shadow: #110f0a;
+    border-bottom: #d5a033;
 
     
 
-
-
-
-nav {
-    position: fixed;
-    display: flex;
-    background-color: #0a3641;
-    width: 15%;
-    height:100%;
-    text-decoration: none;
-    bottom: 0;
-
 }
 
-nav div ul li {
-    background-color: #0a3641;
-    align-content: center;
-    font-size: 1em;
-    text-decoration: none; 
-    width: 20%;
 
+
+nav div ul li {
+    position: relative;
+    display: flex;
+    background-color: #0a3641;
+    justify-content: center;
+    font-size: 1.5rem; 
+    width: 50%;
+    list-style-type: none;
+    margin-top: 1em;
 
       
 }
 
 .jakker {
+    position:sticky;
     display:flex;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
+
     
 }
 .jakker2 {
@@ -67,24 +73,25 @@ nav div ul li {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 button  {
-    display: flexbox;
+    display: flex;
     background-color: #0a3641;
     color: #fff;
     font-style: inherit;
-    font-size: 1em;
+    font-size: 1.5em;
     height: 2rem;
     width: 8rem;
     align-content: center;
     border-color: #0a3641 2px;
     border-radius: 15%;
     cursor: pointer;
-    border: None;
+    border: solid 2px #d5a033;
     
     
 }
 
 button:hover {
     color: #d5a033;
+    transform: scale(1.05);
 }
 
 a {
@@ -102,11 +109,20 @@ a:hover {
     text-emphasis-color: black;
 }
 
-
-
-div img:hover {
-    transform: scale(1.1);
+footer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+    color:#0a3641;
     
 }
+
+
+    
+
+
+
+
 
 
