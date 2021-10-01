@@ -1,9 +1,10 @@
-
 body    {
     display: grid;
-    grid-gap: 1em;
+    grid-gap:1em ;
     grid-template-rows: auto auto 1fr auto;
     min-height: 100vh;
+    background-image: url(images/Rain-texture.jpg);
+    
 
 }
 
@@ -14,6 +15,7 @@ body    {
     margin-right: auto;
     width: 50%;
     height: auto;
+    min-width: 20vh;
 }
 
 
@@ -22,20 +24,19 @@ body    {
         grid-template-columns: 12em 1fr;
         grid-template-rows: auto 1fr auto;
         grid-template-areas: 
-        'nav banner'
-        'nav main'
-        'nav footer'
+        'banner'
+        'nav'
+        'main'
+        'footer'
         ;
+
     }
 
     header {
         grid-column: span 2;
-        background-color: blue;
     }
 
-    nav ul li {
-        display: inline-block;
-    }
+
 
     .logo {
         width: fit-content;
@@ -43,32 +44,50 @@ body    {
 
 }
 
-main {
-    background-color: cornsilk;
+@media (min-width: 40em) {
+    body {
+        grid-template-areas: 
+        'nav banner'
+        'nav main'
+        'nav footer';
+    }
 }
+
+header { grid-area: banner; }
+nav { grid-area: nav;}
+main {grid-area: main;}
+footer {grid-area: footer;}
+
+
 
 nav {
     background-color: #0a3641;
     color:#fff;
+    font-size: 1.5em;
+    font-family: bookman old style;
+    font-weight: bold;
 }
 
-footer {
-    background-color: darkgreen;
-}
 
-nav ul li {
-    display: flex;
-    
+
+nav  {
+    border-color:#d5a033;
+    border-style: solid;
 }
 
 .product{
-    
     border-color: #d5a033;
     border-style: solid ;
 }
 
+button {
+    width: auto;
+    height: auto;
+    
+}
 
-
-
+section {
+    margin: 10em;
+}
 
 
