@@ -1,125 +1,71 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    
+
+body    {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
 
 }
+
 .logo {
+    max-width: 20vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 16%;
+    width: 50%;
     height: auto;
-    
+}
+
+
+@media (min-width: 40em) {
+    body {
+        grid-template-columns: 12em 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+        'nav banner'
+        'nav main'
+        'nav footer'
+        ;
+    }
+
+    header {
+        grid-column: span 2;
+        background-color: blue;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    .logo {
+        width: fit-content;
+    }
+
+}
+
+main {
+    background-color: cornsilk;
 }
 
 nav {
-    position:absolute;
-    display: flex;
-    justify-content: center;
     background-color: #0a3641;
-    width: 16%;
-    height:100%;
-    text-decoration-style: dashed;
-    bottom: 0;
-    border: 3px solid #d5a033;
-    top: 0;
-    box-shadow: #110f0a;
-    border-bottom: #d5a033;
-
-    
-
-}
-
-
-
-nav div ul li {
-    position: relative;
-    display: flex;
-    background-color: #0a3641;
-    justify-content: center;
-    font-size: 1.5rem; 
-    width: 50%;
-    list-style-type: none;
-    margin-top: 1em;
-
-      
-}
-
-.jakker {
-    position:sticky;
-    display:flex;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-
-    
-}
-.jakker2 {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    
-}
-.menu.button{
-    border: none;
-    height: 70px;
-    width: 70px;
-    text-align: center;
-    background-color: #0a3641 ;
-    color: #fff;
-    font-size: 1em;
-    border-radius: 15%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-}
-button  {
-    display: flex;
-    background-color: #0a3641;
-    color: #fff;
-    font-style: inherit;
-    font-size: 1.5em;
-    height: 2rem;
-    width: 8rem;
-    align-content: center;
-    border-color: #0a3641 2px;
-    border-radius: 15%;
-    cursor: pointer;
-    border: solid 2px #d5a033;
-    
-    
-}
-
-button:hover {
-    color: #d5a033;
-    transform: scale(1.05);
-}
-
-a {
-    color: #fff;
-}
-
-a:link {
-    color: #fff;
-    text-decoration: none;
-    
-}
-
-a:hover {
-    color: #d5a033;
-    text-emphasis-color: black;
+    color:#fff;
 }
 
 footer {
+    background-color: darkgreen;
+}
+
+nav ul li {
     display: flex;
-    justify-content: center;
-    position: relative;
-    bottom: 0;
-    color:#0a3641;
     
 }
 
-
+.product{
     
+    border-color: #d5a033;
+    border-style: solid ;
+}
 
 
 
