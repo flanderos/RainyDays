@@ -1,152 +1,147 @@
-body    {
-    display: grid;
-    grid-gap:1em ;
-    grid-template-rows: auto auto 1fr auto;
-    min-height: 100vh;
-    background-image: url(Images/Rain-texture.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
-
-@media (max-width:40em){
-    body {
-    background-color: #fff;
-    }
-    
-}
-
-.logo {
-    max-width: 20vw;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: auto;
-    min-width: 15vh;
-}
-
-
-@media (min-width: 40em) {
-    body {
-        grid-template-columns: 12em 1fr;
-        grid-template-rows: auto 1fr auto;
-    }
-
-    header {
-        grid-column: span 2;
-    }
-
-    nav {
-        grid-row: span 2;
-        
-    }
-
-    
-}
-body {    grid-template-areas: 
-    'banner'
-    'nav'
-    'main'
-    'footer';
-    }    
-
-
-@media (min-width: 40em) {
-    body {
-        grid-template-areas: 
-        'nav banner'
-        'nav main'
-        'nav footer'
-        ;
-    }
-}
-
-header { grid-area: banner;}
-nav { grid-area: nav;}
-main {grid-area: main;}
-footer {grid-area: footer;}
-
-@media (max-width:40em){   
-    nav ul {
-        list-style-type: none;
-        display: flex;
-        justify-content: space-around;
-        margin: 0.5em;
-        padding: 0.5em;
-        font-size: smaller;
-
-        }
-    }
-    
-nav {
-    background-color: #0a3641;
-    color:#fff;
-    font-size: 1.5em;
-    font-family: bookman old style;
-    font-weight: bold;
-    border-color:#d5a033;
-    border-style: solid;
-    border-color:#d5a033;
-    border-style: solid;
-    
-    }
-    
-
-nav ul {
-    list-style-type: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: bookman old style;
-    
-    
-}
-
-nav ul li {
-}
-
-
-.product{
-    border-color: #d5a033;
-    border-style: solid ;
-}
-
-button {
-    width: auto;
-    height: auto;
-    
-    
-}
-
-.viewbutton {
-    position: relative;
-    top: 15px;
-    right: 2.5em;
-    width: 20em;
-    height: 2.5em;
-    border-color: #d5a033;
-    border-radius: 20px;
-    
-
-}
-
-
-.jackets { 
-    display: flex;
-    margin: 2em;
-    
+body {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
+  background-image: url(Images/Rain-texture.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: 40em) {
-    .jackets {
-        display: block;
-        
-    }
+  body {
+    background-color: #fff;
+  }
 }
 
+.logo {
+  max-width: 20vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
+  min-width: 15vh;
+}
 
+@media (min-width: 40em) {
+  body {
+    grid-template-columns: 12em 1fr;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  header {
+    grid-column: span 2;
+  }
+
+  nav {
+    grid-row: span 2;
+  }
+}
+body {
+  grid-template-areas:
+    "banner"
+    "nav"
+    "main"
+    "footer";
+}
+
+@media (min-width: 40em) {
+  body {
+    grid-template-areas:
+      "nav banner"
+      "nav main"
+      "nav footer";
+  }
+  nav {
+    width: 10em;
+  }
+}
+
+header {
+  grid-area: banner;
+}
+nav {
+  grid-area: nav;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
+@media (max-width: 40em) {
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0.5em;
+    padding: 0.5em;
+    font-size: smaller;
+  }
+}
+
+nav {
+  background-color: #0a3641;
+  color: #fff;
+  font-size: 1.5em;
+  font-family: bookman old style;
+  font-weight: bold;
+  border-color: #d5a033;
+  border-style: solid;
+  border-color: #d5a033;
+  border-style: solid;
+}
+
+nav ul {
+  list-style-type: none;
+  font-family: bookman old style;
+}
+
+.product {
+  border-color: #d5a033;
+  border-style: solid;
+}
+
+button {
+  width: auto;
+  height: auto;
+}
+
+.viewbutton {
+  position: relative;
+  top: 15px;
+  right: 1em;
+  font-size: 2em;
+  width: 8em;
+  height: 1.5em;
+  border-color: #d5a033;
+  border-radius: 20px;
+  font-family: bookman old style;
+  font-weight: bold;
+  opacity: 75%;
+}
+
+.jackets {
+  display: flex;
+  margin: 2em;
+  justify-content: center;
+}
+
+@media (max-width: 40em) {
+  .jackets {
+    display: grid;
+    grid-gap: 2em;
+  }
+}
 
 section {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+section div {
+  padding-left: 10em;
 }
