@@ -135,6 +135,10 @@ button {
     display: grid;
     grid-gap: 2em;
   }
+  .viewbutton {
+      background-color: #fff;
+      opacity: 100% ;
+  }
 }
 
 section {
