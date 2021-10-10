@@ -140,6 +140,7 @@ a:hover {
   }
 }
 
+
 .product {
   border-color: #d5a033;
   border-style: solid;
@@ -153,8 +154,8 @@ button {
 }
 
 .viewbutton {
+  vertical-align: middle;
   position: relative;
-  top: 15px;
   right: 1.5em;
   font-size: 2em;
   width: 6em;
@@ -166,16 +167,30 @@ button {
   opacity: 75%;
 }
 
+@media (min-width:40em) {
+  main {
+    display: flex
+  }
+
+  .viewbutton {
+    position: relative;
+    left:1px;
+  }
+}
+
 .flex-container {
   display: flex;
-  flex-wrap: nowrap;
+  justify-content: center;
   margin-left: 10em;
+  margin-bottom: 2em;
+  flex-direction: column;
 
 }
 
 
 .jackets {
   display: flex;
+  justify-content: center;
   height: auto;
   width: 95%;
   
@@ -184,8 +199,6 @@ button {
 @media (max-width: 40em) {
 
   
-
-
   .jackets {
     display: flex;
     flex-direction: column;
