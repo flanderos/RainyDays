@@ -188,6 +188,7 @@ button {
 
   .jackets {
     display: grid;
+
     
     
   }
@@ -196,7 +197,7 @@ button {
     opacity: 100%;
     margin-bottom: 1em;
     position: relative;
-    left: 0.3px;
+    
   
   }
 
