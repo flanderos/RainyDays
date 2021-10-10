@@ -141,7 +141,8 @@ a:hover {
 .product {
   border-color: #d5a033;
   border-style: solid;
-  height: auto;
+  min-width: none;
+  
 }
 
 button {
@@ -165,37 +166,21 @@ button {
 
 .flex-container {
   display: flex;
-  flex-wrap: wrap;
-  max-width: none;
-  min-width: none;
-  flex-shrink: 1;
+  flex-wrap: nowrap;
+
 }
 
 .jackets {
-  flex-grow: 1;
-  flex-shrink: 1;
+  display: flex;
   height: auto;
   margin: 2em;
-  max-height: none;
-}
-
-@media (max-width: 60em) {
-  .jackets {
-    display: grid;
-    margin: 2em;
-  
-  }
-.viewbutton {
-  background-color: #fff;
-  opacity: 100%;
-}  
   
 }
 
 @media (max-width: 40em) {
   .jackets {
     display: grid;
-    grid-gap: 2em;
+    min-width: none;
     
   }
   .viewbutton {
@@ -203,6 +188,7 @@ button {
     opacity: 100%;
   }
 }
+
 
 .flex-container {
   display: flex;
