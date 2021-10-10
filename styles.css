@@ -187,9 +187,9 @@ button {
 
 
   .jackets {
-    display: grid;
-
-    
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
     
   }
   .viewbutton {
@@ -198,6 +198,7 @@ button {
     margin-bottom: 1em;
     position: relative;
     
+    
   
   }
 
@@ -205,14 +206,24 @@ button {
     margin-top: 2em;
   
   }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 1;
+    
+  }
+
+  .product {
+    position: relative;
+    right: 45px;
+  }
 }
 
 
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 1;
-}
+
+
 
 
 
