@@ -1,16 +1,14 @@
 body {
   display: grid;
-  grid-gap:2em;
+  grid-gap: 2em;
   grid-template-rows: auto auto 1fr auto;
   background-image: url(Images/Rain-texture.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height:100vh;
+  min-height: 100vh;
   min-width: 5vh;
-  font-family: 'bookman old style' 'sans serif' 'segoe UI'
-  
-  
+  font-family: "bookman old style" "sans serif" "segoe UI";
 }
 
 @media (max-width: 40em) {
@@ -19,7 +17,6 @@ body {
     margin-right: 0%;
     margin-left: 0%;
   }
-
 }
 
 .logo {
@@ -28,10 +25,8 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width:50%;
-  
+  width: 50%;
 }
-
 
 @media (min-width: 40em) {
   body {
@@ -82,9 +77,6 @@ footer {
 }
 
 @media (max-width: 40em) {
-
-
-
   nav ul {
     list-style-type: none;
     display: flex;
@@ -98,7 +90,6 @@ footer {
   nav ul li {
     margin-bottom: 0em;
   }
-
 }
 
 nav {
@@ -117,7 +108,7 @@ nav {
 
 nav ul {
   list-style-type: none;
-  font-family: 'bookman old style' 'sans serif' 'segoe UI';
+  font-family: "bookman old style" "sans serif" "segoe UI";
   padding-top: 5em;
   font-size: 1em;
 }
@@ -142,12 +133,10 @@ a:hover {
   }
 }
 
-
 .product {
   border-color: #d5a033;
   border-style: solid;
   min-width: none;
-  
 }
 
 button {
@@ -171,14 +160,14 @@ button {
   margin-bottom: 1em;
 }
 
-@media (min-width:40em) {
+@media (min-width: 40em) {
   main {
-    display: flex
+    display: flex;
   }
 
   .viewbutton {
     position: relative;
-    left:1px;
+    left: 1px;
   }
 }
 
@@ -188,40 +177,30 @@ button {
   margin-left: 10em;
   margin-bottom: 2em;
   flex-direction: column;
-
 }
-
 
 .jackets {
   display: flex;
   justify-content: center;
   height: auto;
   width: 95%;
-  
 }
 
 @media (max-width: 40em) {
-
-  
   .jackets {
     display: flex;
     flex-direction: column;
     vertical-align: middle;
-    
   }
   .viewbutton {
     background-color: #fff;
     opacity: 100%;
     margin-bottom: 1em;
     position: relative;
-    
-    
-  
   }
 
   header {
     margin-top: 2em;
-  
   }
 
   .flex-container {
@@ -229,7 +208,6 @@ button {
     flex-direction: column;
     justify-content: center;
     flex-shrink: 1;
-    
   }
 
   .product {
@@ -237,12 +215,3 @@ button {
     right: 45px;
   }
 }
-
-
-
-
-
-
-
-
-
