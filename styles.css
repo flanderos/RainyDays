@@ -169,6 +169,12 @@ button {
   flex-wrap: nowrap;
 
 }
+@media (max-width: 40em) {
+  .flex-container {
+    display: grid;
+    margin: 0%;
+  }
+}
 
 .jackets {
   display: flex;
@@ -180,7 +186,7 @@ button {
 @media (max-width: 40em) {
   .jackets {
     display: grid;
-    min-width: none;
+    
     
   }
   .viewbutton {
