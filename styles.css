@@ -15,7 +15,9 @@ body {
   body {
     background-color: #fff;
     margin: 0px;
-    min-width: none;  
+    min-width: none; 
+    margin-left: 0%;
+    margin-right: 0%; 
   }
 
 }
@@ -169,12 +171,7 @@ button {
   flex-wrap: nowrap;
 
 }
-@media (max-width: 40em) {
-  .flex-container {
-    display: grid;
-    margin: 0%;
-  }
-}
+
 
 .jackets {
   display: flex;
@@ -184,6 +181,8 @@ button {
 }
 
 @media (max-width: 40em) {
+  
+
   .jackets {
     display: grid;
     
@@ -192,6 +191,10 @@ button {
   .viewbutton {
     background-color: #fff;
     opacity: 100%;
+  }
+
+  header {
+    margin-top: 2em;
   }
 }
 
@@ -213,5 +216,5 @@ section div {
 }
 
 div {
-  margin: 1em;
+  margin: 2em;
 }
