@@ -8,6 +8,7 @@ body {
   background-size: cover;
   min-height:100vh;
   min-width: 5vh;
+  font-family: 'bookman old style' 'sans serif' 'segoe UI'
   
   
 }
@@ -116,7 +117,7 @@ nav {
 
 nav ul {
   list-style-type: none;
-  font-family: 'bookman old style' 'sans serif';
+  font-family: 'bookman old style' 'sans serif' 'segoe UI';
   padding-top: 5em;
   font-size: 1em;
 }
