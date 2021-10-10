@@ -182,7 +182,9 @@ button {
 }
 
 @media (max-width: 40em) {
+
   
+
 
   .jackets {
     display: grid;
@@ -192,11 +194,15 @@ button {
   .viewbutton {
     background-color: #fff;
     opacity: 100%;
+    margin-bottom: 1em;
+    position: relative;
+    left: 0.3px;
   
   }
 
   header {
     margin-top: 2em;
+  
   }
 }
 
