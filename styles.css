@@ -14,10 +14,8 @@ body {
 @media (max-width: 40em) {
   body {
     background-color: #fff;
-    margin: 0px;
-    min-width: none; 
+    margin-right: 0%;
     margin-left: 0%;
-    margin-right: 0%; 
   }
 
 }
@@ -111,6 +109,8 @@ nav {
   border-style: solid;
   border-color: #d5a033;
   border-style: solid;
+  margin-left: 0%;
+  margin-right: 0%;
 }
 
 nav ul {
@@ -157,7 +157,7 @@ button {
   top: 15px;
   right: 1.5em;
   font-size: 2em;
-  width: 8.5em;
+  width: 6em;
   height: 1.5em;
   border-color: #d5a033;
   border-radius: 20px;
@@ -169,6 +169,7 @@ button {
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
+  margin-left: 10em;
 
 }
 
@@ -176,7 +177,7 @@ button {
 .jackets {
   display: flex;
   height: auto;
-  margin: 2em;
+  width: 95%;
   
 }
 
@@ -191,6 +192,7 @@ button {
   .viewbutton {
     background-color: #fff;
     opacity: 100%;
+  
   }
 
   header {
@@ -205,16 +207,7 @@ button {
   flex-shrink: 1;
 }
 
-section {
-  display: flex;
-  justify-content: space-evenly;
-}
 
-section div {
-  padding-left: 5em;
-  vertical-align: middle;
-}
 
-div {
-  margin: 2em;
-}
+
+
